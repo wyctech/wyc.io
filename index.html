@@ -43,6 +43,10 @@
       display: none;
     }
 
+    .masthead .item {
+      height: 100%;
+    }
+
     .features img {
       margin-bottom: 1em;
     }
@@ -73,6 +77,11 @@
     }
     .ui.vertical.stripe .horizontal.divider {
       margin: 3em 0em;
+    }
+
+    .trust {
+      height: 200px;
+      background: url("./padlock.svg") no-repeat center;
     }
 
     .ui.vertical.stripe.contact {
@@ -228,7 +237,7 @@
         Business-Driven <br/> Rapid Software Development
       </h1>
       <div class="early cta">
-        <h2>Web and mobile applications, software automation, and IT strategy.</h2>
+        <h2>Mobile and web applications, software automation, and IT strategy.</h2>
         <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
         <div class="ui divider"></div>
       </div>
@@ -241,12 +250,13 @@
                 <img src="./laptop-icon.png"/>
               </div>
               <div class="middle aligned content">
-                <a class="header"><h2>Web and Mobile Applications</h2></a>
+                <a class="header"><h2>Mobile and Web Applications</h2></a>
                 <div class="meta">
-                  <span>Work together to deliver custom software that impacts
-                    the bottom line. <b>We can deliver an MVP in two weeks if
-                      you need it.</b></span>
+                  <span>Work together to deliver secure custom software that
+                    impacts the bottom line. <b>We can deliver an MVP in two
+                      weeks if you need it.</b></span>
                 </div>
+                <a href="#"><u><span>Learn&nbsp;More&nbsp;<i class="angle double right icon"></span></i></u></a>
               </div>
             </div>
           </div>
@@ -260,9 +270,10 @@
                 <a class="header"><h2>Software Automation</h2></a>
                 <div class="meta">
                   <span>Crystalize business workflows into code, save time, and
-                    enable growth. Integrate into CRMs, marketing automation,
-                    inventory management, and more.</span>
+                    enable growth. Integrate into platforms such as CRMs,
+                    marketing automation, inventory management.</span>
                 </div>
+                <a href="#"><u><span>Learn&nbsp;More&nbsp;<i class="angle double right icon"></span></i></u></a>
               </div>
             </div>
           </div>
@@ -273,14 +284,14 @@
                 <img src="./graph-icon.png"/>
               </div>
               <div class="middle aligned content">
-                <a class="header"><h2>IT Strategy and Roadmapping</h2></a>
+                <a class="header"><h2>IT Security and Infrastructure</h2></a>
                 <div class="meta">
-                  <span>Figure out the IT infrastructure necessary to
-                    reach your goals. Make sure your information security, 
-                    product roadmaps, and technology management is
-                    all in place.
+                  <span>Address expensive organizational risks, review
+                    information security policies, and optimize technology
+                    management costs.
                     </span>
                 </div>
+                <a href="#"><u><span>Learn&nbsp;more&nbsp;<i class="angle double right icon"></span></i></u></a>
               </div>
             </div>
           </div>
@@ -301,18 +312,23 @@
       <div class="ui divider"></div>
       <div class="row">
         <div class="six wide column">
-          <img src="./django_rails.jpg" class="ui large bordered rounded image">
+          <img src="./ibm.png" class="ui large bordered rounded image">
         </div>
         <div class="nine wide right floated column">
-          <div class="meta">March 14th, 2017</div>
-          <h4 class="ui header">Just Build it in Django or Rails</h4>
-          <p>Many companies fret about what technologies they should use to
-          build their custom web software because of the dizzying amount of
-          choices in the ecosystem. To the uninitiated, it's a keyword soup of
-          terms like JavaScript, Python, Ruby, ReactJS, Node.js, AngularJS, and
-          Elixir. However, it doesn't have to be complicated. If you care most
-          about spending your time actually talking to customers, then just
-          build it in Django or Rails.</p>
+          <a class="header" href="#"><h4 class="ui header">WYC Technology Helps IBM Patch Major Security Hole</h4></a>
+          <div class="meta"><span>February 21, 2017</span></div>
+          <br/>
+          <div class="description">
+            <p>IBM's Data Science Experience is an enterprise-grade business
+            analytics platform. It enables data scientists to collaborate and
+            leverage cloud computing to understand big data through statistical
+            and machine learning algorithms. WYC Technology conducts routine IT
+            security assessments of new cloud offerings to ensure its clients'
+            data are safe. Within a short period of inspection, we identified a
+            major security flaw that put <b>hundreds of terabytes of customer
+            data</b> at stake. We worked directly with IBM's security team to
+            issue a correction within just two weeks.</p>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -320,6 +336,7 @@
           <a class="ui huge button">Read More</a>
         </div>
       </div>
+
       <div class="centered aligned row">
         <div class="four wide column">
           <hr class="horizontal divider"/>
@@ -327,16 +344,50 @@
       </div>
       <div class="row">
         <div class="six wide column">
+          <img src="./django_rails.jpg" class="ui large bordered rounded image">
+        </div>
+        <div class="nine wide right floated column">
+          <a class="header" href="#"><h4 class="ui header">Just Build it in Django or Rails</h4></a>
+          <div class="meta"><span>March 14th, 2017</span></div>
+          <br/>
+          <div class="description">
+            <p>Many companies fret about what technologies they should use to
+            build their custom web software because of the dizzying amount of
+            choices in the ecosystem. To the uninitiated, it's a keyword soup of
+            terms like JavaScript, Python, Ruby, ReactJS, Node.js, AngularJS, and
+            Elixir. However, it doesn't have to be complicated. If you care most
+            about spending your time actually talking to customers, then just
+            build it in Django or Rails.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center aligned column">
+          <a class="ui huge button">Read More</a>
+        </div>
+      </div>
+
+      <div class="centered aligned row">
+        <div class="four wide column">
+          <hr class="horizontal divider"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="six wide column">
           <img src="./frameworks.jpg" class="ui large bordered rounded image">
         </div>
         <div class="nine wide right floated column">
+          <a class="header" href="#"><h4 class="ui header">When Not to Use a Web Framework</h4></a>
           <div class="meta">February 4th, 2017</div>
-          <h4 class="ui header">When Not to Use a Web Framework</h4>
-          <p>Sometimes, it's actually not best to use a mainstream web
-          framework when starting new development or refactoring an existing
-          project. It's important to understand what web frameworks are
-          typically good at, and where they fall short.
-          </p>
+          <br/>
+          <div class="description">
+            <p>Sometimes, it's actually not best to use a mainstream web
+            framework when starting new development or refactoring an existing
+            project. It's important to understand what web frameworks are
+            typically good at, and where they fall short.
+            </p>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -349,19 +400,19 @@
 
   <div class="ui inverted vertical stripe segment partner">
     <div class="ui text container">
+      <div class="trust">
+      </div>
       <h3 class="ui inverted header">Trusted as a Key Technology Partner</h3>
       <p><span class="logo">WYC Technology</span> is a dependendable partner
       that companies rely on to grow their revenue-generating products. Taking
       the time to truly understand your business and customers will result in
       software solutions that can drive real impact. Most of the challenge of
       creating software is talking to the right people and figuring out what
-      <i>not</i> to build.
+      <i>not</i> to build.</p>
 
-      <!--
-      deliver robust solutions for clients with complex security requirements
-      and big existing infrastructures.
-      -->
-      </p>
+      <p>Through proper understanding and planning, <span class="logo">WYC
+        Technology</span> delivers robust solutions for clients with complex
+      security requirements and big existing infrastructures.</p>
       <h4 class="ui horizontal header divider">
         <a href="#">Client Feedback</a>
       </h4>
@@ -458,9 +509,9 @@
         <div class="three wide column">
           <h4 class="ui inverted header">Services</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">Web and Mobile Application Development</a>
+            <a href="#" class="item">Mobile and Web Application Development</a>
             <a href="#" class="item">Software Automation</a>
-            <a href="#" class="item">IT Strategy and Roadmapping</a>
+            <a href="#" class="item">IT Security and Infrastructure</a>
           </div>
         </div>
         <div class="seven wide column">
