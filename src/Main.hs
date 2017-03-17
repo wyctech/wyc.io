@@ -9,6 +9,7 @@ import           Text.Read                   (readMaybe)
 import           Control.Monad               (liftM, filterM)
 import           Hakyll
 import           Hakyll.Core.Metadata        (lookupString)
+import           System.FilePath.Posix       (takeBaseName,takeDirectory,(</>))
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -51,45 +52,25 @@ main = hakyll $ do
                 >>= relativizeUrls
 
     match "posts/*" $ do
-        route $ setExtension "html"
+        route $ cleanRoute
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    (postCtxWithTags tags)
             >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
             >>= relativizeUrls
 
-    create ["blog.html"] $ do
-        route idRoute
+    create ["guides.html"] $ do
+        route $ cleanRoute
         compile $ do
             posts <- regularPosts
-            let blogCtx =
+            let guidesCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Blog Posts"          `mappend`
+                    constField "title" "Guides and Posts"    `mappend`
+                    constField "guides" "True"               `mappend`
                     defaultContext
 
             makeItem ""
-                >>= loadAndApplyTemplate "templates/blog.html" blogCtx
-                >>= loadAndApplyTemplate "templates/default.html" blogCtx
-                >>= relativizeUrls
-
-    match "projects/*" $ do
-        route $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/project.html" projectCtx
-            >>= loadAndApplyTemplate "templates/default.html" projectCtx
-            >>= relativizeUrls
-                  
-    create ["projects.html"] $ do
-        route idRoute
-        compile $ do
-            projects <- byOrderMetadata =<< loadAll "projects/*"
-            let projectsCtx =
-                    listField "projects" projectCtx (return projects) `mappend`
-                    constField "title" "Projects"                     `mappend`
-                    defaultContext
-
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/projects.html" projectsCtx
-                >>= loadAndApplyTemplate "templates/default.html"  projectsCtx
+                >>= loadAndApplyTemplate "templates/guides.html" guidesCtx
+                >>= loadAndApplyTemplate "templates/default.html" guidesCtx
                 >>= relativizeUrls
 
     match "index.html" $ do
@@ -98,7 +79,6 @@ main = hakyll $ do
             posts <- fmap (take 3) $ regularPosts
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
                     defaultContext
 
             getResourceBody
@@ -134,18 +114,17 @@ postsByTag tag = recentFirst =<< keepTag tag =<< loadAll "posts/*"
 --------------------------------------------------------------------------------
 -- | Try to get a page's field as a Bool
 getItemBool :: MonadMetadata m => String -> Identifier -> m Bool
-getItemBool field id' = do
+getItemBool metaField id' = do
     metadata <- getMetadata id'
-    return $ fromMaybe False $ readMaybe =<< lookupString field metadata
+    return $ fromMaybe False $ readMaybe =<< lookupString metaField metadata
                                                
 
 --------------------------------------------------------------------------------
 -- | Try to get a page's field as an Integer
 getItemInteger :: MonadMetadata m => String -> Identifier -> m Integer
-getItemInteger field id' = do
+getItemInteger metaField id' = do
     metadata <- getMetadata id'
-    return $ fromMaybe 0 $ readMaybe =<< lookupString field metadata
-
+    return $ fromMaybe 0 $ readMaybe =<< lookupString metaField metadata
 
 --------------------------------------------------------------------------------
 -- | Sort pages by their order metadata field, ascending
@@ -176,3 +155,10 @@ keepTag = filterTag True
 -- | Exclude items if they have a certain tag
 excludeTag :: MonadMetadata m => String -> [Item a] -> m [Item a]
 excludeTag = filterTag False
+
+--------------------------------------------------------------------------------
+-- | Strip trailing extension (.html)
+cleanRoute :: Routes
+cleanRoute = customRoute createIndexRoute
+  where createIndexRoute ident = takeDirectory p </> takeBaseName p </> "index.html"
+          where p = toFilePath ident

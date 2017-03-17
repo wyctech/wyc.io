@@ -12,10 +12,21 @@
 .masthead .logo.item img {
   margin-right: 1em;
 }
-.masthead .ui.menu .ui.button {
-  margin-left: 0.5em;
-}
 .masthead h1.ui.header {
+  font-weight: bolder !important;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 3.1em;
+  font-weight: normal;
+  border-bottom: 5px solid #4499CC;
+}
+
+.guides.segment {
+  min-height: 300px;
+  padding: 1em 0em;
+}
+
+.guides h1.ui.header {
   font-weight: bolder !important;
   margin-top: 1em;
   margin-bottom: 1em;
