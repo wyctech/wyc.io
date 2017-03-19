@@ -1,5 +1,6 @@
 ---
 title: "Just Build it in Django or Rails"
+postUrl: /posts/just-build-it-in-django-or-rails/
 imageUrl: "/images/django_rails.jpg"
 description: "
 <p>Many companies fret about what technologies they should use to build their

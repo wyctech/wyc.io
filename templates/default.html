@@ -61,7 +61,11 @@ jQuery(document)
       });
 
     // initialize dropdown menus
-    jQuery(".dropdown").dropdown();
+    jQuery(".dropdown").dropdown({
+      onChange: function(text, value) {
+        jQuery('.contact input.service').text(value.split('\n')[1].trim());
+      },
+    });
 
 		// back to the top
     jQuery('a.active-button').click(function(e) {

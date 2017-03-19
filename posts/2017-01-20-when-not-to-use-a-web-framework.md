@@ -1,5 +1,6 @@
 ---
 title: When Not to Use a Web Framework
+postUrl: /posts/when-not-to-use-a-web-framework/
 imageUrl: "/images/frameworks-large.jpg"
 description: "
 <p>Sometimes, it's actually best to ditch your mainstream web framework when
