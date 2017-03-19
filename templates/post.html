@@ -1,14 +1,52 @@
-<div class="info">
-    Posted on $date$
-    $if(author)$
-        by $author$
-    $endif$
+---
+guides: True
+---
+
+<div class="ui inverted vertical guides center aligned segment hero">
+$partial("templates/_nav.html")$
+
+  <div class="ui left aligned text container mobile only">
+    <h2 class="ui inverted header">WYC&nbsp;Technology</h2>
+  </div>
+  <div class="ui text container grid">
+    <div class="stackable row">
+      <div class="middle aligned four wide column">
+        <img src="$imageUrl$" class="ui large centered rounded image"/>
+      </div>
+      <div class="twelve wide right floated column">
+        <a href="#"><h1 class="ui left aligned inverted post header">$title$</h1></a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="info">
-    $if(tags)$
-    Tags: $tags$
-    $endif$
+<div class="ui text container">
+  <br/>
+  <p><a href="/guides"><i class="double left angle icon"></i> Back to Guides</a></p>
 </div>
 
-$body$
+$if(heroUrl)$
+<div class="ui text container">
+  <br/>
+  <img style="object-fit: cover; width: 100%; height: 350px;" src="$heroUrl$" class="ui large centered bordered image"/>
+</div>
+$endif$
+
+<div class="ui text post container">
+  <p>Posted on $date$</p>
+<!--
+$if(tags)$
+<p>Tags: $tags$</p>
+$endif$
+-->
+
+  <h2>Abstract</h2>
+  $description$
+  <div class="ui divider"></div>
+</div>
+
+$partial("templates/_subscribe.html")$
+
+$if(posts)$
+$partial("templates/post-list.html")$
+$endif$

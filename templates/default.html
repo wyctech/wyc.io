@@ -29,7 +29,7 @@ $partial("templates/_footer.html")$
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
-<script src="./semantic/dist/semantic.js"></script>
+<script src="/semantic/dist/semantic.js"></script>
 <script>
 jQuery(document)
   .ready(function() {
@@ -44,13 +44,42 @@ jQuery(document)
         onBottomPassedReverse: function() {
           jQuery('.fixed.menu').transition('fade out');
         }
-      })
-    ;
+      });
+
+    // toggle menu items when passed
+    jQuery('.contact')
+      .visibility({
+        once: false,
+        onTopVisible: function() {
+          jQuery('a.contact-button').addClass('active');
+          jQuery('a.active-button').removeClass('active');
+        },
+        onTopVisibleReverse: function() {
+          jQuery('a.active-button').addClass('active');
+          jQuery('a.contact-button').removeClass('active');
+        }
+      });
 
     // initialize dropdown menus
     jQuery(".dropdown").dropdown();
-  })
-;
+
+		// back to the top
+    jQuery('a.active-button').click(function(e) {
+      e.preventDefault();
+      jQuery('html, body').animate({scrollTop:0}, 250);
+      return false;
+    });
+
+		// contact buttons
+    jQuery('a.contact-button').click(function(e) {
+      e.preventDefault();
+      var target_offset = jQuery(".contact").offset();
+      var target_top = target_offset.top - 20;
+      jQuery('html, body').animate({scrollTop:target_top}, 250);
+      return false;
+    });
+
+  });
 </script>
 
 </body>
