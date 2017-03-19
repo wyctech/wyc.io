@@ -10,5 +10,6 @@ mainstream web frameworks are good at, and where they fall short.</p>
 "
 featuredOrder: 3
 relatedPosts:
-
+    - "2017-02-21-wyc-helps-ibm-patch-security-vulnerability.md"
+    - "2017-03-14-just-build-it-in-django-or-rails.md"
 ---

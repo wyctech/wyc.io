@@ -32,12 +32,6 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    match (fromList ["consulting.md", "now.md"]) $ do
-        route   $ setExtension "html"
-        compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
-
     tags <- buildTags "posts/*" (fromCapture "tags/*.html")
     tagsRules tags $ \tag pattern -> do
         let title = "Posts tagged \"" ++ tag ++ "\""
@@ -53,16 +47,21 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
+    match "posts/meta/*" $ do
+        route idRoute
+        compile pandocCompiler
 
     match "posts/*" $ do
         route $ cleanRoute
         compile $ do
             id' <- getUnderlying
             metadata <- getMetadata id'
-            let relatedPostsNames = fromMaybe [] $  lookupStringList "relatedPosts" metadata
-            let relatedPostsPaths = map (fromFilePath . ("posts/"++)) relatedPostsNames
+            let relatedPostsNames = fromMaybe [] $ lookupStringList "relatedPosts" metadata
+            let relatedPostsPaths = map (fromFilePath . ("posts/meta/"++)) relatedPostsNames
             posts <- loadAll $ fromList relatedPostsPaths
+            let mHasRelatedPosts = (if null posts then mempty else constField "hasRelatedPosts" "True") 
             let taggedPostCtx =
+                    mHasRelatedPosts                                 `mappend`
                     listField "posts" postCtx (return posts)         `mappend`
                     constField "postListingTitle" "Related Posts"    `mappend`
                     postCtxWithTags tags
