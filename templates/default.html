@@ -73,11 +73,18 @@ jQuery(document)
 		// contact buttons
     jQuery('a.contact-button').click(function(e) {
       e.preventDefault();
-      var target_offset = jQuery(".contact").offset();
-      var target_top = target_offset.top - 20;
-      jQuery('html, body').animate({scrollTop:target_top}, 250);
+      var contact_offset = jQuery(".contact").offset().top - 20;
+      jQuery('html, body').animate({scrollTop:contact_offset}, 250);
       return false;
     });
+
+    // zoom to contact page
+    if (window.location.hash == "#contact") {
+      window.location.hash = "";
+      var contact_offset = jQuery(".contact").offset().top - 20;
+      // window.location.hash = "";
+      jQuery('html, body').animate({scrollTop:contact_offset}, 250);
+    }
 
   });
 </script>

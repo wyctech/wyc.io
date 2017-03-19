@@ -7,11 +7,13 @@ import           Data.Maybe                  (fromMaybe)
 import           Data.List                   (sortBy)
 import           Data.List.Split             (splitOn)
 import           Data.Ord                    (comparing)
+import           Text.Regex                  (subRegex, mkRegex)
+import           Text.Regex.Posix            ((=~))
 import           Text.Read                   (readMaybe)
 import           Control.Monad               (liftM, filterM)
 import           Hakyll
 import           Hakyll.Core.Metadata        (lookupString, lookupStringList)
-import           System.FilePath.Posix       (takeBaseName,takeDirectory,(</>))
+import           System.FilePath.Posix       (takeBaseName,takeDirectory,takeExtension,(</>))
 
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -52,7 +54,7 @@ main = hakyll $ do
         compile pandocCompiler
 
     match "posts/*" $ do
-        route $ cleanRoute
+        route $ stripRouteDatePrefix
         compile $ do
             id' <- getUnderlying
             metadata <- getMetadata id'
@@ -182,8 +184,23 @@ excludeTag = filterTag False
 -- | Strip trailing extension (.html)
 cleanRoute :: Routes
 cleanRoute = customRoute createIndexRoute
-  where createIndexRoute ident = takeDirectory p </> takeBaseName p </> "index.html"
-          where p = toFilePath ident
+    where createIndexRoute ident = takeDirectory p </> takeBaseName p </> "index.html"
+            where p = toFilePath ident
+
+--------------------------------------------------------------------------------
+-- | Strip date prefix (2006-01-02-)
+stripDatePrefix :: String -> String
+stripDatePrefix s = subRegex pat s ""
+   where pat = mkRegex "^[0-9]{4}-[0-9]{2}-[0-9]{2}-"
+
+--------------------------------------------------------------------------------
+-- | Strip date prefix from route (2006-01-02-)
+stripRouteDatePrefix :: Routes
+stripRouteDatePrefix = customRoute createStrippedRoute
+    where createStrippedRoute ident = takeDirectory p </> strippedBaseName </> "index.html"
+              where p = toFilePath ident
+                    strippedBaseName = stripDatePrefix (takeBaseName p)
+
 
 --------------------------------------------------------------------------------
 -- | Generic function to filter items by their tags
