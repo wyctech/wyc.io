@@ -391,7 +391,7 @@ jQuery(document)
     // initialize dropdown menus
     jQuery(".dropdown").dropdown({
       onChange: function(text, value) {
-        jQuery('.contact input.service').text(value.split('\n')[1].trim());
+        jQuery('.contact input.service').val(value.split('\n')[1].trim());
       },
     });
 
