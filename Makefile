@@ -1,7 +1,7 @@
 all: build prepare compile
 
 prepare:
-	@(cd posts/ && \
+	@(cd posts/; \
 		mkdir -p meta; \
 		for f in *.md; do \
 			csplit "$$f" "%---%" > /dev/null; \
@@ -17,6 +17,21 @@ build:
 
 clean:
 	stack exec wyc clean
-	rm -rf posts/meta
+	rm -rf posts/meta/
+	rm -rf _deploy/
 
-.PHONY: all prepare compile build clean
+deploy: clean all
+	mkdir -p _deploy/; \
+	if [ -d "_deploy/.git" ]; then \
+		git clone git@github.com:wyctech/wyc.io.git _deploy; \
+		git checkout -b gh-pages --track origin/gh-pages; \
+	fi; \
+	(cd _deploy; \
+		git checkout gh-pages && \
+		cp -r ../_site/* . && \
+		git add . && \
+		git commit -m'deploy' && \
+		git push origin gh-pages);
+
+
+.PHONY: all prepare compile build clean deploy
