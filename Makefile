@@ -15,6 +15,9 @@ compile:
 build:
 	stack build
 
+watch:
+	stack exec wyc watch
+
 clean:
 	stack exec wyc clean
 	rm -rf posts/meta/

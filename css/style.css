@@ -21,7 +21,7 @@
 }
 
 .masthead.hero h1.ui.header {
-  border-bottom: 5px solid #4499CC;
+  border-bottom: 5px solid #1298D3;
 }
 
 
@@ -36,11 +36,11 @@
   margin-bottom: 1em;
   font-size: 3.1em;
   font-weight: normal;
-  border-bottom: 5px solid #4499CC;
+  border-bottom: 5px solid #1298D3;
 }
 
 .menu h1 {
-  border-bottom: 3px solid #4499CC;
+  border-bottom: 3px solid #1298D3;
 }
 
 .masthead h2 {
@@ -98,10 +98,10 @@
             45deg,
             #5ad,
             #5ad 20px,
-            #4499CC 20px,
-            #4499CC 40px
+            #1298D3 20px,
+            #1298D3 40px
         );
-  background-color: #4499CC;
+  background-color: #1298D3;
 }
 
 .subscribe .cta {
@@ -126,7 +126,7 @@
 }
 
 span.logo {
-  color: #4499CC;
+  color: #1298D3;
 }
 
     .hero {
@@ -187,11 +187,11 @@ blockquote {
 
   .mobile.only .header {
     margin-top: 1em;
-    color: #4499CC;
+    color: #1298D3;
   }
 
   .mobile.light {
-    background-color: #4499CC;
+    background-color: #1298D3;
   }
 
   .post.container {

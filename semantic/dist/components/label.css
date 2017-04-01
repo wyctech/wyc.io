@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.9 - Label
+ * # Semantic UI 2.2.10 - Label
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -754,16 +754,16 @@ a.ui.basic.teal.label:hover {
 
 .ui.blue.labels .label,
 .ui.blue.label {
-  background-color: #1155CC !important;
-  border-color: #1155CC !important;
+  background-color: #0485BC !important;
+  border-color: #0485BC !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.blue.labels .label:hover,
 a.ui.blue.label:hover {
-  background-color: #0749bd !important;
-  border-color: #0749bd !important;
+  background-color: #0075a7 !important;
+  border-color: #0075a7 !important;
   color: #FFFFFF !important;
 }
 
@@ -775,20 +775,20 @@ a.ui.blue.label:hover {
 
 /* Ribbon */
 .ui.blue.ribbon.label {
-  border-color: #0d419d !important;
+  border-color: #03628a !important;
 }
 
 /* Basic */
 .ui.basic.blue.label {
   background-color: #FFFFFF !important;
-  color: #1155CC !important;
-  border-color: #1155CC !important;
+  color: #0485BC !important;
+  border-color: #0485BC !important;
 }
 .ui.basic.blue.labels a.label:hover,
 a.ui.basic.blue.label:hover {
   background-color: #FFFFFF !important;
-  color: #0749bd !important;
-  border-color: #0749bd !important;
+  color: #0075a7 !important;
+  border-color: #0075a7 !important;
 }
 
 /*--- Violet ---*/

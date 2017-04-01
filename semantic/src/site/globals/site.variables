@@ -22,7 +22,7 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@blue             : #1155CC;
+@blue             : #0485BC;
 @green            : #2ECC40;
 @orange           : #FF851B;
 @pink             : #D9499A;
@@ -36,7 +36,7 @@
 @white            : #FFFFFF;
 
 /*---  Light Colors  ---*/
-@lightBlue        : #4499CC;
+@lightBlue        : #1298D3;
 @lightGreen       : #2ECC40;
 @lightOrange      : #FF851B;
 @lightPink        : #FF8EDF;
