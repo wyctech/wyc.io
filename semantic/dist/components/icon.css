@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.2.9 - Icon
+ * # Semantic UI 2.2.10 - Icon
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -295,14 +295,14 @@ i.inverted.circular.teal.icon {
 
 /* Blue */
 i.blue.icon {
-  color: #1155CC !important;
+  color: #0485BC !important;
 }
 i.inverted.blue.icon {
-  color: #4499CC !important;
+  color: #1298D3 !important;
 }
 i.inverted.bordered.blue.icon,
 i.inverted.circular.blue.icon {
-  background-color: #1155CC !important;
+  background-color: #0485BC !important;
   color: #FFFFFF !important;
 }
 
