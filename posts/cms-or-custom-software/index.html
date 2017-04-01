@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>WYC Technology - Business Software Development</title>
+	<link rel="stylesheet" href="../../semantic/dist/semantic.css" />
+	<link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu floating-nav">
+  <div class="ui container">
+    <a class="header item">
+      <h3>  
+        <span class="mobile only">WYC</span>
+        <span class="large screen only">WYC Technology</span>
+      </h3>
+    </a>
+    <div class="right menu">
+      <a href="../../#" class="home-button item">Home</a>
+      <a href="../../guides" class="guides-button active-button active item">Guides</a>
+      <a href="#" class="contact-button item">Contact</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Page Contents -->
+<div class="pusher">
+
+<div class="ui inverted vertical guides center aligned segment hero">
+<!-- Main Nav -->
+<div class="ui container">
+	<div class="ui large secondary inverted pointing menu nav">
+		<a href="../../#" class="header item large screen only">
+			<h1>WYC&nbsp;Technology</h1>
+		</a>
+		<div class="right menu">
+			<a href="../../#" class="item">Home</a>
+			<a href="../../guides" class="active  item">Guides</a>
+			<a href="#contact" class="contact-button item">Contact</a>
+		</div>
+	</div>
+</div>
+
+
+  <div class="ui left aligned text container mobile only">
+    <h2 class="ui inverted header">WYC&nbsp;Technology</h2>
+  </div>
+  <div class="ui text container grid">
+    <div class="stackable row">
+      <div class="middle aligned four wide column">
+        <img src="../../images/wordpress-setup.jpg" class="ui large centered rounded image" />
+      </div>
+      <div class="twelve wide right floated column">
+        <a href="#"><h1 class="ui left aligned inverted post header">Should I Use a CMS or Develop Custom Web Software?</h1></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui text container">
+  <br />
+  <p><a href="../../guides"><i class="double left angle icon"></i> Back to Guides</a></p>
+</div>
+
+
+<div class="ui text container">
+  <br />
+  <img style="object-fit: cover; width: 100%; height: 350px;" src="../../images/laptop-writing.jpg" class="ui large centered bordered image" />
+</div>
+
+
+<div class="ui text post container">
+  <p>Posted on January 15, 2017</p>
+<!--
+
+<p>Tags: </p>
+
+-->
+
+  <h2>Abstract</h2>
+   <p>Writing quality custom software for a web application can quickly get very expensive because the relevant skills are in high demand. Everyone wants to leverage the Internet's low distribution costs to scale their business. A Content Management System (CMS) is software primarily designed to fulfill content publishing needs: blogs, news websites, and newsletters. However, through a rich ecosystem of plugins for free CMS software like Wordpress and Drupal, people have built very successful ecommerce and subscription businesses while paying for <i>very little</i> custom programming. When does this approach work well, and when does it fall short? </p> 
+  <div class="ui divider"></div>
+
+  <h2 id="intended-audience">Intended Audience</h2>
+<p>You are a strapping entrepreneur who happens to be a little clueless when it comes to technology. But you have an idea involving software that can (1) change the world, (2) make you a lot of money, (3) be “pretty cool to just build”, or all of the above.</p>
+<p><a name="features"></a></p>
+<h2 id="need-any-of-these-for-your-product">Need any of these for your product? <a name="features" href="#features"><i class="linkify icon"></i></a></h2>
+<p>While your idea may be unique, it’s very likely that the underlying components are actually pretty common. Do you need users to have accounts and profiles? Are you thinking about a rating system? Can people buy things on your website? These features are all assembled from similar building blocks. Below are some typical asks for new web products. Click each of them to expand, and read a summary and comparison between using a CMS and custom software via web framework:</p>
+<div class="ui styled fluid accordion">
+<div class="title">
+<p><i class="dropdown icon"></i> Customizable User Accounts and Permissions</p>
+</div>
+<div class="content">
+<div class="transition">
+<p>
+Allow users to log in with their Email/Google/Facebook/etc. accounts. Handle password resets and account details. Be able to specify finely-grained control over what they can see, edit, or share. Have user profiles that can be updated and displayed, easily linked to custom data models, and integrated into other software such as CRMs, support desks, other social networks, and more.
+</p>
+<h3>
+What a CMS can do
+</h3>
+<p>
+A CMS can render simple user profiles through additional plugins. Some great software packages such as <a href="https://buddypress.org/">BuddyPress</a> can bring much of this functionality in a very opinionated fashion–if you stray too far from the core objectives of these software packages, then you’ll run into more difficulties than if you just built a custom solution from the start.
+</p>
+<h3>
+What Custom Software can do
+</h3>
+<p>
+Custom software frameworks provide all of the described features out of the box, and there are countless integrations to many other services available through robust open-source libraries. For example, a seasoned Django developer would be able to easily integrate Salesforce with Eventbrite and sign up your website’s users for marketing campaigns and local event notifications depending on their demographics and interests.
+</p>
+</div>
+</div>
+<div class="title">
+<p><i class="dropdown icon"></i> Interrelated Data Models</p>
+</div>
+<div class="content">
+<div class="transition">
+<p>
+Cleanly represent your business data models and how they’re interconnected. For example, a pet store may have a data model representing a <code>Pet</code>, and another model called <code>MealPlan</code>. This feature could solve the problem of connecting each pet to its correct meal plan, allowing staff members to know when/what to feed each pet and then correctly log the the feeding activity.
+</p>
+<p>
+In another example, a freight shipping company might need to quickly figure out what <code>Dock</code>s a <code>CargoVessel</code> will visit within the next 7 days. Interrelated data models are used to link these models together and provide a very straightforward way to ask about things like delivery times, total value of deliveries per vessel, volume over time, and more.
+</p>
+<p>
+<p>More examples include:</p>
+<ul>
+<li>A star rating system with reviews and additional functionality per review</li>
+<li>A list of friends connected through different relationships</li>
+<li>Multiple interacting profiles such as rental listings, renters, and landlords</li>
+<li>A delivery service where users can see a driver’s location in real time</li>
+</ul>
+</p>
+<h3>
+What a CMS can do
+</h3>
+<p>
+A CMS is first and foremost meant to publish written content. The name <i>Content Management System</i> does not suggest otherwise. Therefore, most CMS packages are not great at representing anything other than posts, comments, and perhaps events. For example, WordPress has plugins that attempt to contrive core models such as Post into a desired new data model, but these tend to be unreliable. Other CMS packages such as Drupal have more sophisticated support for what’s known as <i>custom content types</i>, but these add-ons are hardly covered by the core contributing members, and may bring frustrating functionality, performance, and security issues.
+</p>
+<p>
+There exist some add-on packages that can transform CMSes for very specific use cases. There are some for turning WordPress into an eCommerce store, course registration platform, or landing page. However, the data models that these specialized add-ons rely on have a very established way of functioning, and you should only consider using them if they fit your use case nearly perfectly.
+</p>
+<h3>
+What Custom Software can do
+</h3>
+<p>
+This is frankly the bread and butter of many custom software frameworks. The core components in most web frameworks involve providing the developer easy ways to model and interconnect real business processes. For example, Django’s <a href="https://docs.djangoproject.com/en/1.10/topics/db/"><code>db</code> module</a>, Rail’s <a href="https://github.com/rails/rails/tree/master/activerecord">ActiveRecord</a>, and Laravel’s <a href="https://laravel.com/docs/5.4/eloquent">Eqloquent</a>. This is easily a central competency for custom software development, and if you have a lot of interrelated data models, then you should consider skipping CMSes and jumping right into custom development.
+</p>
+</div>
+</div>
+<div class="title">
+<p><i class="dropdown icon"></i> Background Processing</p>
+</div>
+<div class="content">
+<div class="transition">
+<p>
+<p>Your business may need to perform tasks that involve background processing. Such tasks do not involve a user clicking on a link, and should happen automatically in the background. These are timed or recurring events, or tasks that would take too long to do in a page load for the user: services such as automatically syncing to Dropbox, queuing emails to send later, crawling web pages, and running analytics.</p>
+<p>Some real life examples:</p>
+<ul>
+<li>Compute a summary of the daily sales at 12AM every night, and send them to Google Sheets along with an email notification.</li>
+<li>Check a list of websites for new events every 20 minutes, and if there is a new event anywhere, then add it to our collection of aggregated events.</li>
+<li>Remind a user that their document is awaiting their signature, and then notify customer service if they’re unresponsive for two more business days after that.</li>
+</ul>
+</p>
+<h3>
+What a CMS can do
+</h3>
+<p>
+CMS software is not geared for background processing through the user interface. This involves custom CMS programming and/or use of plugins with very narrow functionality.
+</p>
+<h3>
+What Custom Software can do
+</h3>
+<p>
+Web frameworks such as Django or Rails have very robust background job systems that even include reporting and retrying jobs that have failed. Django has <a href="https://github.com/celery/celery">Celery project</a>, and Rails has <a href="https://github.com/resque/resque">Resque</a>. These are very mature systems that have handled traffic at Internet scale and are routinely used by top technology companies.
+</p>
+</div>
+</div>
+<div class="title">
+<p><i class="dropdown icon"></i> Flexible Service Integrations</p>
+</div>
+<div class="content">
+<div class="transition">
+<p>
+<p>It’s likely that your business will need to talk to other services. Perhaps it needs to place a new order of inventory to fulfill a customer’s order, or maybe it should keep track of a user’s activity in a CRM such as Salesforce or Hubspot. What about integrating with an existing login system? These are all situations where your application is expected to have a deep service integration to perform its essential business process.</p>
+</p>
+<h3>
+What a CMS can do
+</h3>
+<p>
+<p>CMS packages will fall short here unless you need a very popular integration that has explicit support from the community. One such example is a plugin for WordPress or Drupal that can funnel contact information from a landing page into Salesforce. However, in this example, using Hubspot instead of Salesforce would likely require a different plugin due to the rigidity of this integration.</p>
+Some intermediate business automation solutions such as <a href="https://zapier.com/">Zapier</a> and <a href="https://ifttt.com/">IFTTT</a> do exist to gap the bridge of very specific plugins and custom programming, and tend to be wonderful solutions if the integrations are present on their platforms. However, these tools usually are limited by what the CMS decides to expose for integration.
+</p>
+<h3>
+What Custom Software can do
+</h3>
+<p>
+Custom software can integrate with anything that can be communicated with. Not only can custom software leverage web frameworks, but it can also use any other developments within the entire ecosystem of the its programming language. These ecosystems are massive, and popular web programming langauges such as Python, Ruby, and PHP tend to have official packages available and supported from many vendors, which will reduce the amount of time and effort required from a developer.
+</p>
+</div>
+</div>
+<div class="title">
+<p><i class="dropdown icon"></i> Mobile App or Single Page App Backend</p>
+</div>
+<div class="content">
+<div class="transition">
+<p>
+<p>Your business might be served best by a highly-responsive mobile web page or a native mobile application for iOS or Android available on the Play or App stores. Do you have to build the whole thing from scratch again to support these types of pages?</p>
+</p>
+<h3>
+What a CMS can do
+</h3>
+<p>
+With a CMS, you will likely not be able to reuse any of the work done so far, and you must then begin the pursuit of a completely new solution to support your single page or mobile apps. Support for native mobile apps using the CMS as a backend can be done, but the road is long and treacherous. Many developers will likely charge even more for this option as it’s very much like trying to get a stubborn mule to do ballet.
+</p>
+<p>
+The problem is that CMSes aren’t designed to satisfy the needs of interacting with a mobile application. In the overwhelming majority of cases, it’s better to just start custom software development. If mobile apps are your main product, then a service such as <a href="https://firebase.google.com/">Firebase</a> by Google can usually save a lot of developer time.
+</p>
+<h3>
+What Custom Software can do
+</h3>
+<p>
+Custom web software happily serves as a reliable and scalable backend for a mobile application. For example, LinkedIn built their mobile app backend using Ruby on Rails, and it supports millions of concurrently active users. One great benefit of developing custom web software is that the foundation will have been set for the development of mobile applications.
+</p>
+<p>
+If you must support both web and mobile, then this is the clear choice.
+</p>
+</div>
+</div>
+</div>
+<p><br /> Maybe you could find uses for all of these features, as most companies chasing custom software do.</p>
+<h2 id="no-i-dont-even-need-most-of-those">No, I don’t even need most of those!</h2>
+<p>If you’re still scratching your head over how some or even most of these features could possibly help to your business, then maybe you don’t need custom software after all and could be better served with a content management system such as WordPress or Drupal. These solutions require no coding to get started and are also free and open-source, and with enough effort, can approach feature-parity to web frameworks such as Django or Rails. However, this would be like trying to make new furniture by modifying existing IKEA furniture. It can be done, and sometimes it actually works quite well, but often it ends up becoming Frankenstein’s monster.</p>
+<p>To be clear, there’s nothing wrong with a WordPress or Drupal site that has grown to support your business. There are many companies that have started with CMS software and, through their success, funded a series of modifications to better serve their new and existing needs. However, CMS software was designed to achieve the specific goal of content publishing, and if you stray too far from this core pattern, then often you end up maintaining software far more complicated than the same thing built with a web framework such as Django or Rails. Riding a CMS makes functionality changes and new features a lot more expensive, and at this point many companies opt to rebuild their applications entirely. If you see now that your business will definitely need the features above, then you could save a lot of pain now by getting it built to your needs via a web framework. Otherwise, a CMS may serve your business well enough to the point of being able to afford a web framework-based solution, or perhaps it’s such a great fit that you’ll never need to switch.</p>
+<h2 id="yes-i-need-most-of-those-to-execute-my-core-business-model.">Yes, I need most of those to execute my core business model.</h2>
+<p>If all or most of these could help your business, then you’re in luck; the dominant web frameworks and their accompanying ecosystems of add-on packages bring those to the table for free!</p>
+<p>Is it possible to instead build everything from scratch so that every single line of code perfectly suits your needs? Probably, but your rendition won’t be crafted by the same world-class web framework developers or battle-tested for over a decade. The benefits of building everything yourself tend to be marginal if present at all. It also won’t be free. You’ll end up paying a lot of money for what amounts to a bad version of already existing web frameworks.</p>
+<p>Moreover, teams developing new products must spend their time actually talking to customers and figuring out where the real problems are in their industries. If something’s not part of the core value that you’re providing, then it’s usually better to buy or borrow than to build. Everything that you’re not competing or differentiating on should be made standard. The costs of standardized components race towards zero.</p>
+<p>Thanks to the wonderful open-source movement and community, these projects come at no cost to you. If you’re making healthy profits off of these projects, you could consider giving back:</p>
+<ul>
+<li><a href="https://www.djangoproject.com/fundraising/" class="uri">https://www.djangoproject.com/fundraising/</a></li>
+<li><a href="https://github.com/rails/rails#contributing" class="uri">https://github.com/rails/rails#contributing</a></li>
+</ul>
+<h2 id="exceptions">Exceptions</h2>
+<p>All rules have exceptions. There are definitely situations where Rails and Django may not be the first choices for use in custom software development.</p>
+<p>See the blog post titled <a href="../../posts/when-not-to-use-a-web-framework/">When Not to Use a Web Framework</a>.</p>
+</div>
+
+<div class="ui inverted vertical stripe segment subscribe">
+	<div class="ui text container cta">
+    <h4 class="ui inverted header">Sign up for the email newsletter that will
+      improve your business's IT strategy, for free. No sales pitches. Just the
+      information.</h4>
+    <form action="https://wyc.us15.list-manage.com/subscribe/post?u=b1469d7e803d32d0dc004d023&amp;id=aa9dcd3276" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div class="ui form">
+        <label class="ui inverted header"><h5>Work Email</h5></label>
+        <div class="two fields">
+          <div class="twelve wide field">
+            <input placeholder="john.doe@company.com" type="email" name="EMAIL" required />
+            <!-- real people should not fill this in and expect good things -->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_b1469d7e803d32d0dc004d023_aa9dcd3276" tabindex="-1" value />
+            </div>
+          </div>
+          <div class="four wide field">
+            <button class="ui primary button" type="submit">
+              <i class="send icon"></i>Sign Up!</button>
+          </div>
+        </div>
+      </div>
+    </form>
+	</div>
+</div>
+
+
+
+
+<div class="ui vertical stripe segment">
+	<div class="ui middle aligned stackable grid container">
+
+    <!-- Post Listing Title -->
+    
+		<div class="one column row centered align">
+			<h3 class="ui header">Related Posts</h3>
+		</div>
+		<div class="ui divider"></div>
+    
+
+		
+    <!-- Post -->
+		<div class="row">
+			<div class="six wide column">
+        <a href="../../posts/when-not-to-use-a-web-framework/"><img src="../../images/frameworks-large.jpg" class="ui large bordered rounded image" /></a>
+			</div>
+			<div class="nine wide right floated column">
+				<a class="header" href="../../posts/when-not-to-use-a-web-framework/"><h4 class="ui header">When Not to Use a Web Framework</h4></a>
+				<div class="meta"><span>January 20, 2017</span></div>
+				<br />
+				<div class="description">
+					 <p>Sometimes, it's actually best to ditch your mainstream web framework when starting new development or refactoring an existing project. If you try to make an opinionated tool do something that it wasn't designed to do, then prepare for a bloated budget and missed deadlines. It's important to understand what mainstream web frameworks are good at, and where they fall short.</p> 
+				</div>
+			</div>
+		</div>
+    <!-- Post URL -->
+		<div class="row">
+			<div class="center aligned column">
+				<a href="../../posts/when-not-to-use-a-web-framework/" class="ui huge button">Read More</a>
+			</div>
+		</div>
+    <div class="ui divider"></div>
+		
+    <!-- Post -->
+		<div class="row">
+			<div class="six wide column">
+        <a href="../../posts/just-build-it-in-django-or-rails/"><img src="../../images/django_rails.jpg" class="ui large bordered rounded image" /></a>
+			</div>
+			<div class="nine wide right floated column">
+				<a class="header" href="../../posts/just-build-it-in-django-or-rails/"><h4 class="ui header">Just Build it in Django or Rails</h4></a>
+				<div class="meta"><span>March 14, 2017</span></div>
+				<br />
+				<div class="description">
+					 <p>Many companies fret about what technologies they should use to build their custom web and mobile backend software. It's easy to see why, given the dizzying array of choices that all claim they're the best; and the claims may all be true for certain specific use cases. To the uninitiated, it's a keyword soup of terms like JavaScript, Python, Ruby, ReactJS, Node.js, AngularJS, and Elixir. However, it doesn't have to be complicated. <b>If you care most about spending your time actually talking to customers, then just build it in Django or Rails.</b></p> 
+				</div>
+			</div>
+		</div>
+    <!-- Post URL -->
+		<div class="row">
+			<div class="center aligned column">
+				<a href="../../posts/just-build-it-in-django-or-rails/" class="ui huge button">Read More</a>
+			</div>
+		</div>
+    <div class="ui divider"></div>
+		
+	</div>
+</div>
+
+
+
+
+<div class="ui vertical stripe segment contact">
+	<div class="ui text container">
+		<h3 class="ui inverted header">Get In Touch</h3>
+		<h5 class="ui header inverted">You will only ever be contacted by a <u>real human being</u>.</h5>
+		<div class="ui form">
+      <form action="https://formspree.io/wayne@wyc.io" method="POST" target="_blank">
+        <div class="two fields">
+          <div class="field">
+            <label>Full Name</label>
+            <input name="name" placeholder="John Doe" type="text" />
+          </div>
+          <div class="field">
+            <label>Work Email</label>
+            <input name="email" placeholder="john.doe@company.com" type="email" />
+          </div>
+        </div>
+        <input name="service" class="service" type="hidden" />
+        <div class="ui segment field"><span>I'm most interested in talking about
+          <div class="ui inline dropdown">
+            <div class="text">
+              <img class="ui avatar image" src="../../images/question-icon-small.png" />
+              Please Select One
+            </div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <div class="item">
+                <img class="ui avatar image" src="../../images/explode-icon-small.png" />
+                A Two-Week MVP
+              </div>
+              <div class="item">
+                <img class="ui avatar image" src="../../images/tablet-icon-small.png">
+                Mobile Development
+              </div>
+              <div class="item">
+                <img class="ui avatar image" src="../../images/computer-icon-small.png">
+                Web Development
+              </div>
+              <div class="item">
+                <img class="ui avatar image" src="../../images/gears-icon-small.png">
+                Software Automation
+              </div>
+              <div class="item">
+                <img class="ui avatar image" src="../../images/cloud-lock-icon-small.png">
+                IT Security
+              </div>
+              <div class="item">
+                <img class="ui avatar image" src="../../images/graph-icon-small.png">
+                IT Strategy
+              </div>
+            </div>
+          </div>.
+        </span></div>
+        <div class="field">
+          <label>Message</label>
+          <textarea name="message" rows="3" placeholder="How can we help?" type="text"></textarea>
+        </div>
+        <div class="ui grid"><div class="center aligned row"><div class="column">
+            <button class="ui primary button huge" type="submit">
+              <i class="mail icon"></i>Submit</button>
+        </div></div></div>
+      </form>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="ui inverted vertical footer segment">
+	<div class="ui container">
+		<div class="ui stackable inverted divided equal height stackable grid">
+			<div class="three wide column">
+				<h4 class="ui inverted header">About</h4>
+				<div class="ui inverted link list">
+					<a href="../../#" class="item">Home</a>
+					<a href="../../guides" class="item">Guides</a>
+					<a href="#contact" class="item">Contact</a>
+				</div>
+			</div>
+			<div class="three wide column">
+				<h4 class="ui inverted header">Services</h4>
+				<div class="ui inverted link list">
+					<a href="#" class="item">Mobile and Web Application Development</a>
+					<a href="#" class="item">Software Automation</a>
+					<a href="#" class="item">IT Security and Infrastructure</a>
+				</div>
+			</div>
+			<div class="seven wide column">
+				<h4 class="ui inverted header">WYC Technology, LLC</h4>
+        <p>This website was built with
+        <a target="_blank" href="https://jaspervdj.be/hakyll/">Hakyll</a> and
+        <a target="_blank" href="https://semantic-ui.com/">Semantic UI</a>.
+        </p>
+        <p>The
+        source code is 
+        <a target="_blank" href="https://github.com/wyctech/wyc.io">available on
+          GitHub.</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="../../semantic/dist/semantic.js"></script>
+<script>
+jQuery(document)
+  .ready(function() {
+
+    // fix menu when passed
+    jQuery('.hero')
+      .visibility({
+        once: false,
+        onBottomPassed: function() {
+          jQuery('.fixed.menu').transition('fade in');
+        },
+        onBottomPassedReverse: function() {
+          jQuery('.fixed.menu').transition('fade out');
+        }
+      });
+
+    // toggle menu items when passed
+    jQuery('.contact')
+      .visibility({
+        once: false,
+        onTopVisible: function() {
+          jQuery('a.contact-button').addClass('active');
+          jQuery('a.active-button').removeClass('active');
+        },
+        onTopVisibleReverse: function() {
+          jQuery('a.active-button').addClass('active');
+          jQuery('a.contact-button').removeClass('active');
+        }
+      });
+
+    // initialize dropdown menus
+    jQuery(".dropdown").dropdown({
+      onChange: function(text, value) {
+        jQuery('.contact input.service').val(value.split('\n')[1].trim());
+      },
+    });
+
+    // initialize accordions
+    jQuery('.ui.accordion').accordion();
+
+		// back to the top
+    jQuery('a.active-button').click(function(e) {
+      e.preventDefault();
+      jQuery('html, body').animate({scrollTop:0}, 250);
+      return false;
+    });
+
+		// contact buttons
+    jQuery('a.contact-button').click(function(e) {
+      e.preventDefault();
+      var contact_offset = jQuery(".contact").offset().top - 20;
+      jQuery('html, body').animate({scrollTop:contact_offset}, 250);
+      return false;
+    });
+
+    // zoom to contact page
+    if (window.location.hash == "#contact") {
+      window.location.hash = "";
+      var contact_offset = jQuery(".contact").offset().top - 20;
+      // window.location.hash = "";
+      jQuery('html, body').animate({scrollTop:contact_offset}, 250);
+    }
+
+  });
+</script>
+
+</body>
+
+</html>

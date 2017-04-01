@@ -137,10 +137,10 @@
     <!-- Post -->
 		<div class="row">
 			<div class="six wide column">
-        <a href="../posts/should-i-use-a-cms-for-my-software-project/"><img src="../images/wordpress-setup.jpg" class="ui large bordered rounded image" /></a>
+        <a href="../posts/cms-or-custom-software/"><img src="../images/wordpress-setup.jpg" class="ui large bordered rounded image" /></a>
 			</div>
 			<div class="nine wide right floated column">
-				<a class="header" href="../posts/should-i-use-a-cms-for-my-software-project/"><h4 class="ui header">Should I Use a CMS for My Software Project?</h4></a>
+				<a class="header" href="../posts/cms-or-custom-software/"><h4 class="ui header">Should I Use a CMS or Develop Custom Web Software?</h4></a>
 				<div class="meta"><span>January 15, 2017</span></div>
 				<br />
 				<div class="description">
@@ -151,7 +151,7 @@
     <!-- Post URL -->
 		<div class="row">
 			<div class="center aligned column">
-				<a href="../posts/should-i-use-a-cms-for-my-software-project/" class="ui huge button">Read More</a>
+				<a href="../posts/cms-or-custom-software/" class="ui huge button">Read More</a>
 			</div>
 		</div>
     <div class="ui divider"></div>
@@ -304,6 +304,9 @@ jQuery(document)
         jQuery('.contact input.service').val(value.split('\n')[1].trim());
       },
     });
+
+    // initialize accordions
+    jQuery('.ui.accordion').accordion();
 
 		// back to the top
     jQuery('a.active-button').click(function(e) {
