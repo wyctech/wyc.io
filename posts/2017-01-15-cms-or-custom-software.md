@@ -15,7 +15,7 @@ while paying for <i>very little</i> custom programming. When does this approach
 work well, and when does it fall short?
 </p>
 "
-featuredOrder: 9999
+featuredOrder: 3
 relatedPosts:
     - "2017-03-14-just-build-it-in-django-or-rails.md"
     - "2017-01-20-when-not-to-use-a-web-framework.md"

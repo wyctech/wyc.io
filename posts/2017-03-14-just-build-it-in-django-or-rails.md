@@ -12,7 +12,7 @@ Elixir. However, it doesn't have to be complicated. <b>If you care most about
 spending your time actually talking to customers, then just build it in Django
 or Rails.</b></p>
 "
-featuredOrder: 2
+featuredOrder: 9999
 relatedPosts:
     - "2017-01-20-when-not-to-use-a-web-framework.md"
     - "2017-02-21-wyc-helps-ibm-patch-security-vulnerability.md"

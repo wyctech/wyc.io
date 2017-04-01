@@ -9,7 +9,7 @@ an opinionated tool do something that it wasn't designed to do, then prepare
 for a bloated budget and missed deadlines. It's important to understand what
 mainstream web frameworks are good at, and where they fall short.</p>
 "
-featuredOrder: 3
+featuredOrder: 2
 relatedPosts:
     - "2017-01-15-cms-or-custom-software.md"
     - "2017-03-14-just-build-it-in-django-or-rails.md"
