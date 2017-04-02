@@ -3,7 +3,16 @@ title: "Should I Use a CMS or Develop Custom Web Software?"
 postUrl: /posts/cms-or-custom-software/
 imageUrl: "/images/wordpress-setup.jpg"
 heroUrl: "/images/laptop-writing.jpg"
+
 description: "
+A Content Management System (CMS) is software primarily designed to fulfill
+content publishing needs: blogs, news websites, and newsletters. However,
+through a rich ecosystem of plugins for free CMS software like Wordpress and
+Drupal, people have built very successful ecommerce and subscription businesses
+while paying for very little custom programming.
+"
+
+htmlDescription: "
 <p>Writing quality custom software for a web application can quickly get very
 expensive because the relevant skills are in high demand. Everyone wants to
 leverage the Internet's low distribution costs to scale their business. A

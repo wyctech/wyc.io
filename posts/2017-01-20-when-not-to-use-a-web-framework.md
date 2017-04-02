@@ -2,7 +2,13 @@
 title: When Not to Use a Web Framework
 postUrl: /posts/when-not-to-use-a-web-framework/
 imageUrl: "/images/frameworks-large.jpg"
-description: "
+
+description: "Sometimes, it's actually best to ditch your mainstream web framework when
+starting new development or refactoring an existing project. If you try to make
+an opinionated tool do something that it wasn't designed to do, then prepare
+for a bloated budget and missed deadlines."
+
+htmlDescription: "
 <p>Sometimes, it's actually best to ditch your mainstream web framework when
 starting new development or refactoring an existing project. If you try to make
 an opinionated tool do something that it wasn't designed to do, then prepare
