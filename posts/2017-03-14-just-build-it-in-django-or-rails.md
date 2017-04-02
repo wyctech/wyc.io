@@ -186,6 +186,8 @@ straight-forward manner to grow with your organization.
 
 [<i class="linkify icon"></i>Stackshare - Instagram](https://stackshare.io/instagram/instagram)
 
+<hr />
+
 ### [Pinterest](https://www.pinterest.com/)
 
 Pinterest is a media-rich sharing platform where users can share and save
@@ -200,6 +202,8 @@ span of years.
 [<i class="linkify icon"></i>High Scalability - Scaling Pinterest](http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html)
 
 [<i class="linkify icon"></i>Stackshare - Pinterest](https://stackshare.io/pinterest/pinterest)
+
+<hr />
 
 ### [Disqus](https://disqus.com/)
 
@@ -217,6 +221,8 @@ specify business data models even well into a company's maturity.
 [<i class="linkify icon"></i>High Scalability - Disqus](http://highscalability.com/blog/2014/4/28/how-disqus-went-realtime-with-165k-messages-per-second-and-l.html)
 
 [<i class="linkify icon"></i>Stackshare - Disqus](https://stackshare.io/disqus/disqus)
+
+<hr />
 
 ### [Bitbucket](https://bitbucket.org)
 
@@ -253,6 +259,8 @@ Django and Rails on new projects.
 [<i class="linkify icon"></i>Stackshare - Twitter](https://stackshare.io/twitter/twitter)
 
 
+<hr />
+
 ### [Shopify](https://www.shopify.com/)
 
 Shopify is an ecommerce platform. In 2016, it processed $15.4 billion in Gross
@@ -268,6 +276,8 @@ afford little to no downtime.
 
 [<i class="linkify icon"></i>Stackshare - Shopify](https://stackshare.io/shopify/shopify)
 
+
+<hr />
 
 ### [Airbnb](https://www.airbnb.com/)
 
@@ -286,6 +296,8 @@ can be made even more robust in the necessary ways when it's needed.
 
 [<i class="linkify icon"></i>Stackshare - Airbnb](https://stackshare.io/airbnb/airbnb)
 
+
+<hr />
 
 ### [GitHub](https://github.com/)
 
