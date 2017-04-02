@@ -44,15 +44,18 @@
 <p>Instagram is a wildly-popular photo sharing service with more than 600 million users. There are more than 80 million photos uploaded and 3.5 billion likes per day. It still runs on Django, which proved stable and modular enough to allow the engineering team to swap out the database to a more customized solution when the company was experiencing growing pains. A benefit of a well-engineered and modular piece of software such as Django is that it can be customized in a straight-forward manner to grow with your organization.</p>
 <p><a href="http://files.cnblogs.com/files/bitwolaiye/Mike-Krieger-Instagram-at-the-Airbnb-tech-talk-on-Scaling-Instagram.pdf"><i class="linkify icon"></i>Mike Krieger on Scaling Instagram</a></p>
 <p><a href="https://stackshare.io/instagram/instagram"><i class="linkify icon"></i>Stackshare - Instagram</a></p>
+<hr />
 <h3 id="pinterest"><a href="https://www.pinterest.com/">Pinterest</a></h3>
 <p>Pinterest is a media-rich sharing platform where users can share and save recipes, home decor ideas, and more. It averages 5 million posts per day to its platform, and many more comments and saves. Pinterest started on Django, and through its growth, has also made many heavy customizations to the framework including a sharded database solution and custom search indexes. This is another example of the framework providing value to the business from day one, and then being able to rapidly add supporting capabilities as needed over the span of years.</p>
 <p><a href="http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html"><i class="linkify icon"></i>High Scalability - Scaling Pinterest</a></p>
 <p><a href="https://stackshare.io/pinterest/pinterest"><i class="linkify icon"></i>Stackshare - Pinterest</a></p>
+<hr />
 <h3 id="disqus"><a href="https://disqus.com/">Disqus</a></h3>
 <p>Disqus is a plug-and-play discussion and engagement tool that processes more than 165,000 requests per second as of 2014. A pure-Django solution got the company to 45,000 requests per second, and then they switched out a tiny component into the Go programming language to handle real-time message processing (see the exceptions section above). However, the rest of the architecture was still written in Django, as of 2014. These web frameworks work well as part of a wholesome solution, and they provide a very nice way to specify business data models even well into a company’s maturity.</p>
 <p><a href="https://blog.disqus.com/scaling-django-to-8-billion-page-views"><i class="linkify icon"></i>Scaling Django to 8 Billion Page Views</a></p>
 <p><a href="http://highscalability.com/blog/2014/4/28/how-disqus-went-realtime-with-165k-messages-per-second-and-l.html"><i class="linkify icon"></i>High Scalability - Disqus</a></p>
 <p><a href="https://stackshare.io/disqus/disqus"><i class="linkify icon"></i>Stackshare - Disqus</a></p>
+<hr />
 <h3 id="bitbucket"><a href="https://bitbucket.org">Bitbucket</a></h3>
 <p>Bitbucket is Atlassian’s competitor to GitHub. It is also an Internet hosting service that serves open-source software that is smaller in usage, but still serves projects in the millions. It has been tightly integrated into Atlassian’s other service offerings including the JIRA issue tracker and the Confluence project management tool. This is an example of how nicely Django can play well with other systems and services at a large scale.</p>
 <p><a href="https://en.wikipedia.org/wiki/Bitbucket"><i class="linkify icon"></i>Bitbucket - Wikipedia</a></p>
@@ -63,16 +66,19 @@
 <p><a href="https://www.infoq.com/articles/twitter-java-use"><i class="linkify icon"></i>Twitter Shifting More Code to JVM, Citing Performance and Encapsulation As Primary Drivers</a></p>
 <p><a href="https://blog.twitter.com/2011/twitter-search-is-now-3x-faster"><i class="linkify icon"></i>Twitter Search is Now 3x Faster</a></p>
 <p><a href="https://stackshare.io/twitter/twitter"><i class="linkify icon"></i>Stackshare - Twitter</a></p>
+<hr />
 <h3 id="shopify"><a href="https://www.shopify.com/">Shopify</a></h3>
 <p>Shopify is an ecommerce platform. In 2016, it processed $15.4 billion in Gross Merchandise Volume with annual revenues of near $400 million. It’s still running on Rails, and has managed to scale Rails to support over 375,000 merchants. Rails has been proven to be robust and performant enough to create a platform that supports hundreds of thousands of ecommerce businesses, which can afford little to no downtime.</p>
 <p><a href="https://www.slideshare.net/jduff/how-shopify-scales-rails-20443485"><i class="linkify icon"></i>How Shopify Scales Rails</a></p>
 <p><a href="https://www.shopify.com/press/releases/shopify-announces-fourth-quarter-and-full-year-2016-financial-results"><i class="linkify icon"></i>Shopify Announces Fourth-Quarter and Full Year 2016 Financial Results</a></p>
 <p><a href="https://stackshare.io/shopify/shopify"><i class="linkify icon"></i>Stackshare - Shopify</a></p>
+<hr />
 <h3 id="airbnb"><a href="https://www.airbnb.com/">Airbnb</a></h3>
 <p>Airbnb is an online marketplace for hospitality. People stay at privately-owned apartments, homes, etc. for reasonable fees. Estimates put its revenues at far over $1 billion for 2016, and in 2015, it had over 80 million bookings. The number of bookings is likely to be far higher today, and they still rely on Ruby on Rails. Due to its excellent engineering team, Airbnb has managed to scale Ruby on Rails to reliably and securely process all the accompanying payments for those bookings. Not only is Rails great for prototyping, but it can be made even more robust in the necessary ways when it’s needed.</p>
 <p><a href="http://nerds.airbnb.com/large-scale-payments-systems-ruby-rails/"><i class="linkify icon"></i>Large Scale Payments Systems and Ruby on Rails</a></p>
 <p><a href="http://www.bizjournals.com/sanfrancisco/news/2016/09/01/airbnbs-revenue-soars-compared-to-hotels.html"><i class="linkify icon"></i>Airbnb’s revenue soars 89 percent</a></p>
 <p><a href="https://stackshare.io/airbnb/airbnb"><i class="linkify icon"></i>Stackshare - Airbnb</a></p>
+<hr />
 <h3 id="github"><a href="https://github.com/">GitHub</a></h3>
 <p>GitHub is an Internet hosting service that serves much of the world’s open-source software. Interestingly, Rails and Django source code repositories are both hosted on GitHub. There are over 50 million other projects hosted on GitHub today, and it is still being served by a scaled up Rails installation. Large and small software companies rely completely on GitHub every day to manage their code repositories. This speaks to how rock-solid a Rails application can be made.</p>
 <p><a href="https://medium.com/s-c-a-l-e/github-scaling-on-ruby-with-a-nomadic-tech-team-4db562b96dcd#.tl56tya20"><i class="linkify icon"></i>GitHub: Scaling on Ruby, with a nomadic tech team</a></p>
