@@ -30,7 +30,7 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    create ["robots.txt"] $ do
+    create ["robots.txt", "favicon.ico"] $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -76,10 +76,12 @@ main = hakyll $ do
     create ["guides.html"] $ do
         route $ cleanRoute
         compile $ do
+            let description = "Guides and posts about software by WYC Technology."
             posts <- regularPosts
             let guidesCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Guides and Posts"    `mappend`
+                    constField "description" description     `mappend`
                     constField "guides" "True"               `mappend`
                     defaultContext
 
@@ -91,9 +93,12 @@ main = hakyll $ do
     match "index.html" $ do
         route   idRoute
         compile $ do
+            let description = "Business-Driven Rapid Software Development"
             posts <- fmap (take 3) $ (byOrderMetadataField "featuredOrder") =<< regularPosts
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
+                    constField "title" "Rapid Software Development" `mappend`
+                    constField "description" description     `mappend`
                     defaultContext
 
             getResourceBody
