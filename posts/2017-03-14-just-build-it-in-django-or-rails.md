@@ -234,7 +234,7 @@ play well with other systems and services at a large scale.
 
 ## Companies Based on Ruby on Rails
 
-### Twitter
+### [Twitter](https://twitter.com/)
 
 Twitter started in 2006, and used Rails successfully for five years before
 making the switch to a different JVM-based platform in 2011. They identified a
@@ -253,7 +253,7 @@ Django and Rails on new projects.
 [<i class="linkify icon"></i>Stackshare - Twitter](https://stackshare.io/twitter/twitter)
 
 
-### Shopify
+### [Shopify](https://www.shopify.com/)
 
 Shopify is an ecommerce platform. In 2016, it processed $15.4 billion in Gross
 Merchandise Volume with annual revenues of near $400 million. It's still
@@ -269,7 +269,7 @@ afford little to no downtime.
 [<i class="linkify icon"></i>Stackshare - Shopify](https://stackshare.io/shopify/shopify)
 
 
-### Airbnb
+### [Airbnb](https://www.airbnb.com/)
 
 Airbnb is an online marketplace for hospitality. People stay at privately-owned
 apartments, homes, etc. for reasonable fees. Estimates put its revenues at far
@@ -287,7 +287,7 @@ can be made even more robust in the necessary ways when it's needed.
 [<i class="linkify icon"></i>Stackshare - Airbnb](https://stackshare.io/airbnb/airbnb)
 
 
-### GitHub
+### [GitHub](https://github.com/)
 
 GitHub is an Internet hosting service that serves much of the world's
 open-source software. Interestingly, Rails and Django source code repositories
