@@ -58,22 +58,22 @@
 <p><a href="https://en.wikipedia.org/wiki/Bitbucket"><i class="linkify icon"></i>Bitbucket - Wikipedia</a></p>
 <p><a href="https://www.atlassian.com/"><i class="linkify icon"></i>Atlassian</a></p>
 <h2 id="companies-based-on-ruby-on-rails">Companies Based on Ruby on Rails</h2>
-<h3 id="twitter">Twitter</h3>
+<h3 id="twitter"><a href="https://twitter.com/">Twitter</a></h3>
 <p>Twitter started in 2006, and used Rails successfully for five years before making the switch to a different JVM-based platform in 2011. They identified a massive architectural benefit to their business by switching to a statically-typed language (Scala) and framework (Play) that was in many ways a better natural fit for their messaging platform. At this point, they already had many exceptional engineering hires and huge amounts of traffic. Their business strategy and core engineering problems had been identified, and Rails got the job done until that point. Reports suggest that Twitter still uses both Django and Rails on new projects.</p>
 <p><a href="https://www.infoq.com/articles/twitter-java-use"><i class="linkify icon"></i>Twitter Shifting More Code to JVM, Citing Performance and Encapsulation As Primary Drivers</a></p>
 <p><a href="https://blog.twitter.com/2011/twitter-search-is-now-3x-faster"><i class="linkify icon"></i>Twitter Search is Now 3x Faster</a></p>
 <p><a href="https://stackshare.io/twitter/twitter"><i class="linkify icon"></i>Stackshare - Twitter</a></p>
-<h3 id="shopify">Shopify</h3>
+<h3 id="shopify"><a href="https://www.shopify.com/">Shopify</a></h3>
 <p>Shopify is an ecommerce platform. In 2016, it processed $15.4 billion in Gross Merchandise Volume with annual revenues of near $400 million. It’s still running on Rails, and has managed to scale Rails to support over 375,000 merchants. Rails has been proven to be robust and performant enough to create a platform that supports hundreds of thousands of ecommerce businesses, which can afford little to no downtime.</p>
 <p><a href="https://www.slideshare.net/jduff/how-shopify-scales-rails-20443485"><i class="linkify icon"></i>How Shopify Scales Rails</a></p>
 <p><a href="https://www.shopify.com/press/releases/shopify-announces-fourth-quarter-and-full-year-2016-financial-results"><i class="linkify icon"></i>Shopify Announces Fourth-Quarter and Full Year 2016 Financial Results</a></p>
 <p><a href="https://stackshare.io/shopify/shopify"><i class="linkify icon"></i>Stackshare - Shopify</a></p>
-<h3 id="airbnb">Airbnb</h3>
+<h3 id="airbnb"><a href="https://www.airbnb.com/">Airbnb</a></h3>
 <p>Airbnb is an online marketplace for hospitality. People stay at privately-owned apartments, homes, etc. for reasonable fees. Estimates put its revenues at far over $1 billion for 2016, and in 2015, it had over 80 million bookings. The number of bookings is likely to be far higher today, and they still rely on Ruby on Rails. Due to its excellent engineering team, Airbnb has managed to scale Ruby on Rails to reliably and securely process all the accompanying payments for those bookings. Not only is Rails great for prototyping, but it can be made even more robust in the necessary ways when it’s needed.</p>
 <p><a href="http://nerds.airbnb.com/large-scale-payments-systems-ruby-rails/"><i class="linkify icon"></i>Large Scale Payments Systems and Ruby on Rails</a></p>
 <p><a href="http://www.bizjournals.com/sanfrancisco/news/2016/09/01/airbnbs-revenue-soars-compared-to-hotels.html"><i class="linkify icon"></i>Airbnb’s revenue soars 89 percent</a></p>
 <p><a href="https://stackshare.io/airbnb/airbnb"><i class="linkify icon"></i>Stackshare - Airbnb</a></p>
-<h3 id="github">GitHub</h3>
+<h3 id="github"><a href="https://github.com/">GitHub</a></h3>
 <p>GitHub is an Internet hosting service that serves much of the world’s open-source software. Interestingly, Rails and Django source code repositories are both hosted on GitHub. There are over 50 million other projects hosted on GitHub today, and it is still being served by a scaled up Rails installation. Large and small software companies rely completely on GitHub every day to manage their code repositories. This speaks to how rock-solid a Rails application can be made.</p>
 <p><a href="https://medium.com/s-c-a-l-e/github-scaling-on-ruby-with-a-nomadic-tech-team-4db562b96dcd#.tl56tya20"><i class="linkify icon"></i>GitHub: Scaling on Ruby, with a nomadic tech team</a></p>
 <p><a href="https://stackshare.io/github/github"><i class="linkify icon"></i>Stackshare - GitHub</a></p>
